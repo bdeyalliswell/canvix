@@ -427,4 +427,50 @@ export const COLLECTION_V08_SOCIAL: TemplateDef[] = [
       },
     ],
   },
+// 15 — Beauty Spa Menu
+  {
+    slug: 'beauty-spa-menu',
+    name: 'Beauty Spa Menu',
+    category: 'social',
+    width: 1080,
+    height: 1080,
+    accent: '#5c4436',
+    badge: 'new',
+    pages: [
+      {
+        id: 'p1',
+        background: { type: 'solid', color: '#F9F6F0' },
+        elements: [
+          tx({ x: 190, y: 70, width: 700, height: 40, text: 'RIMBERIO • BEAUTY & SPA', fontFamily: 'Playfair Display', fontSize: 22, letterSpacing: 4, fill: '#5C4436', align: 'center' }),
+          tx({ x: 140, y: 120, width: 800, height: 60, text: 'Beauty Spa Menu', fontFamily: 'Playfair Display', fontSize: 52, fill: '#4A3528', align: 'center', bold: true }),
+          tx({ x: 140, y: 185, width: 800, height: 30, text: 'Relax. Rejuvenate. Rediscover your glow.', fontFamily: 'Inter', fontSize: 20, fill: '#7C685B', align: 'center' }),
+          ln({ x: 390, y: 225, width: 300, height: 0, stroke: '#C8B6A6', strokeWidth: 2 }),
+
+          // Column 1
+          tx({ x: 100, y: 260, width: 400, height: 35, text: 'Facial Treatments', fontFamily: 'Playfair Display', fontSize: 28, fill: '#3E2C22', bold: true }),
+          tx({ x: 100, y: 300, width: 400, height: 160, text: '• Basic Facial — $45\n• Deep Cleansing Facial — $60\n• Anti-Aging Facial — $75\n• Hydrating Facial — $65\n• Acne Treatment Facial — $70', fontFamily: 'Inter', fontSize: 18, fill: '#615147' }),
+
+          tx({ x: 100, y: 490, width: 400, height: 35, text: 'Massage Therapy', fontFamily: 'Playfair Display', fontSize: 28, fill: '#3E2C22', bold: true }),
+          tx({ x: 100, y: 530, width: 400, height: 160, text: '• Swedish Massage (60 min) — $80\n• Deep Tissue Massage — $90\n• Hot Stone Massage — $95\n• Aromatherapy Massage — $85\n• Foot Reflexology — $40', fontFamily: 'Inter', fontSize: 18, fill: '#615147' }),
+
+          tx({ x: 100, y: 720, width: 400, height: 35, text: 'Body Treatments', fontFamily: 'Playfair Display', fontSize: 28, fill: '#3E2C22', bold: true }),
+          tx({ x: 100, y: 760, width: 400, height: 130, text: '• Body Scrub — $55\n• Body Wrap — $70\n• Detox Treatment — $75\n• Slimming Treatment — $80', fontFamily: 'Inter', fontSize: 18, fill: '#615147' }),
+
+          // Column 2
+          tx({ x: 580, y: 260, width: 400, height: 35, text: 'Manicure & Pedicure', fontFamily: 'Playfair Display', fontSize: 28, fill: '#3E2C22', bold: true }),
+          tx({ x: 580, y: 300, width: 400, height: 160, text: '• Classic Manicure — $25\n• Classic Pedicure — $35\n• Gel Manicure — $40\n• Gel Pedicure — $50\n• Nail Art (add-on) — $10+', fontFamily: 'Inter', fontSize: 18, fill: '#615147' }),
+
+          tx({ x: 580, y: 490, width: 400, height: 35, text: 'Add-Ons', fontFamily: 'Playfair Display', fontSize: 28, fill: '#3E2C22', bold: true }),
+          tx({ x: 580, y: 530, width: 400, height: 140, text: '• Collagen Mask — $15\n• Scalp Massage (15 min) — $20\n• Paraffin Hand Treatment — $18\n• Eye Treatment — $25', fontFamily: 'Inter', fontSize: 18, fill: '#615147' }),
+
+          // Decorative Circles
+          sh('ellipse', { x: 620, y: 720, width: 140, height: 140, fill: 'transparent', stroke: '#C8B6A6', strokeWidth: 2 }),
+          sh('ellipse', { x: 790, y: 720, width: 140, height: 140, fill: 'transparent', stroke: '#C8B6A6', strokeWidth: 2 }),
+          st('🌸', { x: 665, y: 765, width: 50, height: 50, fontSize: 40 }),
+          st('🌿', { x: 835, y: 765, width: 50, height: 50, fontSize: 40 }),
+          tx({ x: 580, y: 880, width: 400, height: 40, text: 'BOOK YOUR APPOINTMENT TODAY', fontFamily: 'DM Mono', fontSize: 16, letterSpacing: 2, fill: '#7C685B', align: 'center' }),
+        ],
+      },
+    ],
+  },
 ]
