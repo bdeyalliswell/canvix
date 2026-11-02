@@ -473,4 +473,57 @@ export const COLLECTION_V08_SOCIAL: TemplateDef[] = [
       },
     ],
   },
+// 16 — Gold and Brown Modern Diwali Greetings (Photo সহ)
+  {
+    slug: 'modern-diwali-greetings',
+    name: 'Gold & Brown Modern Diwali Greetings',
+    category: 'social',
+    width: 1080,
+    height: 1080,
+    accent: '#D4AF37',
+    badge: 'new',
+    pages: [
+      {
+        id: 'p1',
+        background: { type: 'solid', color: '#1B0E05' },
+        elements: [
+          // Background Diwali Photo (Diya & Warm Bokeh Lights)
+          {
+            type: 'image',
+            src: 'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=1080&auto=format&fit=crop&q=80',
+            x: 0,
+            y: 0,
+            width: 1080,
+            height: 1080,
+            opacity: 0.85
+          },
+
+          // Dark Overlay Gradient / Box for text readability
+          sh('rect', { x: 0, y: 0, width: 1080, height: 500, fill: '#1B0E05', opacity: 0.65, stroke: 'transparent', strokeWidth: 0 }),
+
+          // Header Text
+          tx({ x: 190, y: 120, width: 700, height: 40, text: 'H A P P Y', fontFamily: 'DM Mono', fontSize: 24, letterSpacing: 8, fill: '#E5C158', align: 'center', bold: true }),
+          tx({ x: 90, y: 160, width: 900, height: 120, text: 'DIWALI', fontFamily: 'Cinzel', fontSize: 110, letterSpacing: 6, fill: '#FFFFFF', align: 'center', bold: true }),
+
+          // Subtitle / Wishing Note
+          tx({
+            x: 140,
+            y: 290,
+            width: 800,
+            height: 80,
+            text: 'May the festival of lights bring peace to your life!\nWishing your Diwali filled with love, laughter,\nand sparkling moments.',
+            fontFamily: 'Inter',
+            fontSize: 22,
+            lineHeight: 1.6,
+            fill: '#F3E5AB',
+            align: 'center'
+          }),
+
+          // Bottom Social Handle & Divider Line
+          ln({ x: 290, y: 980, width: 500, height: 0, stroke: '#E5C158', strokeWidth: 1.5 }),
+          tx({ x: 240, y: 1000, width: 600, height: 35, text: '@reallygreatsite', fontFamily: 'DM Mono', fontSize: 18, letterSpacing: 3, fill: '#FFFFFF', align: 'center' }),
+        ],
+      },
+    ],
+  },
 ]
