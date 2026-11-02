@@ -473,7 +473,7 @@ export const COLLECTION_V08_SOCIAL: TemplateDef[] = [
       },
     ],
   },
-// 16 — Gold and Brown Modern Diwali Greetings (Photo সহ)
+// 16 — Gold and Brown Modern Diwali Greetings 
   {
     slug: 'modern-diwali-greetings',
     name: 'Gold & Brown Modern Diwali Greetings',
